@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
-import './index.css'
+import './app.css'
 import bgPic from './assets/bg.png'
 import bgPic2 from './assets/bg2.png'
-import caneModel from './assets/cane-sample.png'
 
 // Banner.js
 const Cane = () => {
