@@ -3,14 +3,15 @@ import logo from './assets/img/7up-logo.png'
 
 export default function Navbar() {
   return (
-    <nav className='container bg-slate-400 flex justify-between'>
+    <nav className='container flex justify-between py-5 border-b-2'>
         <div className="logo w-[70px]">
             <img src={logo} className='w-full' alt="7up Logo" />
         </div>
-        <ul className='nav-links flex items-center'>
-            <li className='bg-slate-50'>Home</li>
-            <li>Products</li>
-            <li>Stores</li>
+
+        <ul className='nav-links flex items-center text-white text-[19px] gap-2'>
+            <li><a href="#" className='hover:underline cursor-pointer px-4 py-2'>Home</a></li>
+            <li><a href="#" className='hover:underline cursor-pointer px-4 py-2'>Products</a></li>
+            <li><a href="#" className='hover:underline cursor-pointer px-4 py-2'>Stores</a></li>
         </ul>
     </nav>
   )

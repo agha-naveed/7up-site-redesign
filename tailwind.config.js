@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         bgClr1: "#149957"
-      }
+      },
     },
   },
   plugins: [],

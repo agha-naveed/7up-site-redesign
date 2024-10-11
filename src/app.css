@@ -31,7 +31,7 @@ html , body{
     url(assets/cane-sample.png);
     transition: 0.2s ease-out;
     background-size: auto 100%;
-    width: 200px;
+    width: 60%;
     aspect-ratio: 2/4.08;
     background-blend-mode: multiply;
     mask-image: url(assets/cane-sample.png);

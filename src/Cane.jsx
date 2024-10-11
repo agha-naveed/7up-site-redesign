@@ -24,7 +24,7 @@ const Cane = () => {
     }, []);
 
     return (
-        <div className="banner">
+        <div className="banner content-center">
             <div className="product" ref={productRef} style={{ '--left': `${leftValue}px` }}>
                 <div 
                     className="soda" 

@@ -11,8 +11,20 @@ export default function App() {
         <div className="navbar flex justify-center">
           <Navbar />
         </div>
-        {/* <Cane /> */}
+        <div className='header-content flex justify-center'>
+          <div className="container flex justify-around">
+            <div className="header-content-texts py-56 w-fit">
+              <h2 className='text-white text-9xl font-bold'>Feels Good</h2>
+              <p className='text-white text-8xl'>to be you</p>
+            </div>
+            <Cane />
+          </div>
+        </div>
       </header>
+
+      <section className='w-full h-screen bg-slate-800'>
+
+      </section>
     </div>
   )
 }
