@@ -1,0 +1,53 @@
+
+:root {
+    --bg-clr-1: #149957;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-clr-1);
+}
+.banner {
+    height: 100%;
+    position: relative;
+}
+.banner .product {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    --left: 0px;
+    display: flex;
+    
+}
+.soda {
+    background: var(--url) var(--left) 0,
+    url(assets/cane-sample.png);
+    transition: 0.2s ease-out;
+    background-size: auto 100%;
+    width: 200px;
+    aspect-ratio: 2/4.08;
+    background-blend-mode: multiply;
+    mask-image: url(assets/cane-sample.png);
+    mask-size: auto 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#s2 {
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
