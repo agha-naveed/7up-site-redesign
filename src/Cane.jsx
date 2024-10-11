@@ -9,11 +9,28 @@ const Cane = () => {
     const [sodaOpacity, setSodaOpacity] = useState(0);
     const [leftValue, setLeftValue] = useState(0);
 
+
+    let rotation = 0
+
     useEffect(() => {
+
         const handleScroll = () => {
             const scrollY = window.scrollY;
             setSodaOpacity(scrollY >= 300 ? 1 : 0);
             setLeftValue(scrollY);
+
+            
+            if (scrollY > rotation) {
+                rotation = -scrollY
+                productRef.current.style.transform = `rotate(${rotation / 5}deg)`
+            }
+
+            else if (scrollY < rotation) {
+                rotation = scrollY
+                productRef.current.style.transform = `rotate(-${rotation / 5}deg)`
+
+            }
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -25,7 +42,7 @@ const Cane = () => {
 
     return (
         <div className="banner content-center">
-            <div className="product" ref={productRef} style={{ '--left': `${leftValue}px` }}>
+            <div className="product" ref={productRef} style={{ '--left': `${leftValue}px`, transformOrigin: 'center center' }}>
                 <div 
                     className="soda" 
                     style={{ 

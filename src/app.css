@@ -17,13 +17,13 @@ html , body{
 }
 .banner .product {
     width: 500px;
-    height: 500px;
+    height: 100%;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 1;
     --left: 0px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .soda {
@@ -37,8 +37,8 @@ html , body{
     mask-image: url(assets/cane-sample.png);
     mask-size: auto 100%;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 #s2 {
     opacity: 0;
