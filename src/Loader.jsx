@@ -4,13 +4,18 @@ import loadingCane from './assets/img/7up-cane-png.png'
 
 export default function Loader() {
   return (
-    <div className='w-full h-screen bg-bgClr1 flex justify-center items-center'>
-        <img src={loadingCane} alt="7up Cane" />
-            <div className="loading-text flex text-white">
-            <p>Loading</p>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
+    <div className='loader w-full h-screen bg-bgClr1'>
+        <div className='w-full h-full flex justify-center items-center gap-2'>
+            <div className='w-[60px] loader-img'>
+                <img src={loadingCane} className='w-full' alt="7up Cane" />
+            </div>
+
+            <div className="loading-text flex text-3xl text-white">
+                <p>Loading</p>
+                <p>.</p>
+                <p>.</p>
+                <p>.</p>
+            </div>
         </div>
 
     </div>

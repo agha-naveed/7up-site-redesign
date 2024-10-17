@@ -56,3 +56,26 @@ html , body{
     opacity: 0.1;
     z-index: 1;
 }
+
+
+
+
+
+
+/* ------- Loader ------- */
+
+.loader .loader-img {
+    animation: bouncingLoaderImgidentifier 0.8s ease-out infinite alternate;
+}
+
+.loading-text p {
+    
+}
+@keyframes bouncingLoaderImgidentifier {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
