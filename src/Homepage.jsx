@@ -3,13 +3,12 @@ import './index.css'
 import './app.css'
 import Cane from './cane'
 import Navbar from './Navbar'
-import HorizontalScrollCarousel from './HorizontalScrollCarousel'
 
 export default function App() {
 
   return (
     <div>
-      <header className='w-full h-screen bg-bgClr1'>
+      <header className='w-full h-screen bg-bgClr1 overflow-hidden'>
         
         <div className="navbar flex justify-center">
           <Navbar />
@@ -27,7 +26,6 @@ export default function App() {
       </header>
 
 
-      <HorizontalScrollCarousel />
       <div className='h-screen w-full bg-slate-700'></div>
         
     </div>
