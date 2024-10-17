@@ -3,7 +3,7 @@ import './index.css'
 import './app.css'
 import Cane from './cane'
 import Navbar from './Navbar'
-import HorizontalScroll from './HorizontalScroll'
+import HorizontalScrollCarousel from './HorizontalScrollCarousel'
 
 export default function App() {
 
@@ -26,9 +26,10 @@ export default function App() {
         </div>
       </header>
 
-      <section className='w-full h-screen flex bg-slate-800 py-96 overflow-x-scroll'>
-        <HorizontalScroll />
-      </section>
+
+      <HorizontalScrollCarousel />
+      <div className='h-screen w-full bg-slate-700'></div>
+        
     </div>
   )
 }
