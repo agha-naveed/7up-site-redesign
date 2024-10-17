@@ -64,13 +64,15 @@ html , body{
 
 /* ------- Loader ------- */
 
-.loader .loader-img {
+.loader .loader-img, .loading-text  {
     animation: bouncingLoaderImgidentifier 0.8s ease-out infinite alternate;
 }
-
-.loading-text p {
-    
+.loading-text {
+    position: relative;
+    top: 20px;
+    animation-delay: 0.5s;
 }
+
 @keyframes bouncingLoaderImgidentifier {
     0% {
         transform: translateY(0);

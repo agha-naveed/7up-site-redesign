@@ -12,9 +12,9 @@ export default function Loader() {
 
             <div className="loading-text flex text-3xl text-white">
                 <p>Loading</p>
-                <p>.</p>
-                <p>.</p>
-                <p>.</p>
+                <p className='dot'>.</p>
+                <p className='dot'>.</p>
+                <p className='dot'>.</p>
             </div>
         </div>
 
