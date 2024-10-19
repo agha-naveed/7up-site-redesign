@@ -3,7 +3,7 @@ import logo from './assets/img/7up-logo.png'
 
 export default function Navbar() {
   return (
-    <nav className='container flex justify-between py-5 border-b-2'>
+    <nav data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-out"  className='container flex justify-between py-5 border-b-2'>
         <div className="logo w-[70px]">
             <img src={logo} className='w-full' alt="7up Logo" />
         </div>

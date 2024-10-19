@@ -41,7 +41,7 @@ const Cane = () => {
     }, []);
 
     return (
-        <div className="banner content-center">
+        <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out" className="banner content-center">
             <div className="product" ref={productRef} style={{ '--left': `${leftValue}px`, transformOrigin: 'center center' }}>
                 <div 
                     className="soda" 
