@@ -3,7 +3,7 @@ import './app.css'
 import bgPic from './assets/bg.png'
 import bgPic2 from './assets/bg_copy.png'
 
-// Banner.js
+
 const Cane = () => {
     const productRef = useRef(null);
     const [sodaOpacity, setSodaOpacity] = useState(0);

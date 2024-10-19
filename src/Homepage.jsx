@@ -25,8 +25,9 @@ export default function App() {
       </header>
 
 
-      <div className='h-screen w-full bg-slate-700'>
-      </div>
+      <section className='h-screen w-full bg-slate-700'>
+
+      </section>
         
     </div>
   )
