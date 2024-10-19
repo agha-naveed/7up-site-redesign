@@ -63,6 +63,9 @@ html , body{
 
 
 /* ------- Loader ------- */
+.loader {
+    transition: 0.2s ease-out;
+}
 
 .loader .loader-img, .loading-text  {
     animation: bouncingLoaderImgidentifier 0.8s ease-out infinite alternate;

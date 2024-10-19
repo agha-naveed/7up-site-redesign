@@ -1,12 +1,28 @@
-import { StrictMode, useState, useEffect } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Homepage from './Homepage.jsx'
 import './index.css'
 import Loader from './Loader.jsx'
+import Layout from './Layout.jsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        path: 'home',
+        element: <Homepage />
+      }
+    ]
+  }
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Loader />
-    <Homepage />
+    <RouterProvider router={router} />
   </StrictMode>,
 )

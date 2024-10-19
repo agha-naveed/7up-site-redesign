@@ -3,26 +3,11 @@ import './index.css'
 import './app.css'
 import Cane from './cane'
 import Navbar from './Navbar'
-import Loader from './Loader'
 
 export default function App() {
 
-  const [loading, setLoading] = useState(true);
-
-  function loaderFn() {
-    
-  }
-
-  useEffect(() => {
-    window.addEventListener('load', loaderFn)
-  
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
-    loading ?
-    <Loader />
-    : 
     <div>
       <header className='w-full h-screen bg-bgClr1 overflow-hidden'>
         
