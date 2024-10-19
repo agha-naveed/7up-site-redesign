@@ -5,23 +5,18 @@ import Loader from './Loader'
 export default function Layout() {
 
     const [loading, setLoading] = useState(true);
-    const [loadingEffect, setLoadingEffect] = useState(false);
     
     useEffect(() => { 
 
         setTimeout(() => {
-            setLoadingEffect(true)
-
-            setTimeout(() => {
-                setLoading(false)
-            }, 100)
+            setLoading(false)
         }, 1000)
     }, [])
 
   return (
     <>
         {
-            loading ? <Loader loadingEffect = {loadingEffect} /> :
+            loading ? <Loader /> :
             <Outlet />
         }
     </>

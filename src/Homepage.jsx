@@ -6,7 +6,6 @@ import Navbar from './Navbar'
 
 export default function App() {
 
-
   return (
     <div>
       <header className='w-full h-screen bg-bgClr1 overflow-hidden'>
