@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import './app.css'
-import Cane from './cane'
+import Cane from './Cane.jsx'
 import Navbar from './Navbar'
 
 
