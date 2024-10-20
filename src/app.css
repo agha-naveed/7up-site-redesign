@@ -29,16 +29,14 @@ html , body{
 .soda {
     background: var(--url) var(--left) 0,
     url(assets/cane-sample.png);
-    transition: 0.2s ease-out;
+    transition: 0.5s ease-out;
     background-size: auto 100%;
-    width: 60%;
+    width: 50%;
     aspect-ratio: 2/4.08;
     background-blend-mode: multiply;
     mask-image: url(assets/cane-sample.png);
     mask-size: auto 100%;
     position: absolute;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
 }
 #s2 {
     opacity: 0;
