@@ -13,7 +13,7 @@ export default function Layout() {
 
         setTimeout(() => {
             setLoading(false)
-        }, 100)
+        }, 1000)
     }, [])
 
   return (

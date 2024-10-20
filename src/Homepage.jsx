@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './index.css'
 import './app.css'
 import Cane from './cane'
@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 export default function App() {
   return (
     <div>
-      <header className='w-full h-screen bg-bgClr1 overflow-hidden'>
+      <header className='w-full h-full bg-bgClr1 overflow-hidden'>
         
         <div className="navbar flex justify-center">
           <Navbar />
