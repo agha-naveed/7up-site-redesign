@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css'
 import './app.css'
-import Cane from './Cane.jsx'
 import Navbar from './Navbar'
 
 
@@ -19,7 +18,6 @@ export default function App() {
               <h2 className='text-white text-9xl font-bold'>Feels Good</h2>
               <p className='text-white text-8xl'>to be you</p>
             </div>
-            <Cane />
           </div>
         </div>
       </header>
