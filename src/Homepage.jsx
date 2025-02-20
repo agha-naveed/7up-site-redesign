@@ -2,7 +2,6 @@ import React from 'react'
 import './index.css'
 import './app.css'
 import Navbar from './Navbar'
-import ThreeScene from './extraComponent/Cane'
 
 
 export default function App() {
@@ -20,8 +19,6 @@ export default function App() {
               <p className='text-white text-8xl'>to be you</p>
             </div>
           </div>
-
-          <ThreeScene />
         </div>
       </header>
 
