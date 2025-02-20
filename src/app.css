@@ -28,13 +28,13 @@ html , body{
 }
 .soda {
     background: var(--url) var(--left) 0,
-    url(assets/cane-sample.png);
+    url(assets/img/mockup.png);
     transition: 0.2s ease-out;
     background-size: auto 100%;
     width: 50%;
     aspect-ratio: 2/4.08;
     background-blend-mode: multiply;
-    mask-image: url(assets/cane-sample.png);
+    mask-image: url(assets/img/mockup.png);
     mask-size: auto 100%;
     position: absolute;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './index.css'
 import './app.css'
 import Navbar from './Navbar'
+import Cane from './extraComponent/Cane'
 
 
 export default function App() {
@@ -18,6 +19,8 @@ export default function App() {
               <h2 className='text-white text-9xl font-bold'>Feels Good</h2>
               <p className='text-white text-8xl'>to be you</p>
             </div>
+
+            <Cane />
           </div>
         </div>
       </header>
