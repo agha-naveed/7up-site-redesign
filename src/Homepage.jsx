@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import './app.css'
 import Navbar from './Navbar'
-import Cane from './extraComponent/Cane'
+import ThreeScene from './extraComponent/Cane'
 
 
 export default function App() {
@@ -21,7 +21,7 @@ export default function App() {
             </div>
           </div>
 
-          <Cane />
+          <ThreeScene />
         </div>
       </header>
 
