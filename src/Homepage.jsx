@@ -4,7 +4,7 @@ import './app.css'
 import Navbar from './Navbar'
 import Cane from './extraComponent/Cane'
 import bgVid from './assets/vid/bg.webm'
-import { Link, Element, scroller } from 'react-scroll';
+import HorizontalScroll from './extraComponent/HorizontalScroll'
 
 
 export default function App() {
@@ -28,9 +28,10 @@ export default function App() {
       </header>
 
 
-      <section className='h-screen overflow-hidden w-full bg-slate-700'>
-        <video src={bgVid} loop autoPlay muted className='w-full opacity-25 blur-sm'></video>
-      </section>
+      {/* <section className='h-screen relative overflow-hidden w-full bg-slate-700'> */}
+        {/* <video src={bgVid} loop autoPlay muted className='w-full opacity-25 blur-sm'></video> */}
+        <HorizontalScroll />
+      {/* </section> */}
         
     </div>
   )
