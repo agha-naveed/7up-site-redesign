@@ -18,7 +18,7 @@ const SmoothScroll = ({ children }) => {
     }
   }, []);
 
-  return <div ref={scrollRef} className="h-full">{children}</div>;
+  return <div ref={scrollRef} className="h-full pointer-events-none">{children}</div>;
 };
 
 export default SmoothScroll;
