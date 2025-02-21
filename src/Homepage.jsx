@@ -19,7 +19,7 @@ export default function App() {
       </header>
 
 
-      <section className='relative w-full bg-slate-700'>
+      <section className='relative w-full bg-black'>
         <HorizontalScroll />
         <video src={bgVid} loop autoPlay muted className='w-full'></video>
       </section>

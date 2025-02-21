@@ -100,24 +100,5 @@ html , body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
     color: white;
-  }
-  
-  .panel-1 {
-    background-color: #3498db;
-  }
-  
-  .panel-2 {
-    background-color: #2ecc71;
-  }
-  
-  .panel-3 {
-    background-color: #e74c3c;
-  }
-  .panel-4 {
-    background-color: coral;
-  }
-  .panel-5 {
-    background-color: violet;
   }
