@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../app.css'
-import bgPic from '../assets/img/bg_copy.png'
-// import bgPic2 from './assets/bg2.png'
 import bgPic2 from '../assets/img/bg_copy.png'
+import bgPic from '../assets/img/bg2.png'
 
 
 // Banner.js
