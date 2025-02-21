@@ -11,6 +11,7 @@ html , body{
     height: 100%;
     width: 100%;
 }
+
 .banner {
     height: 100%;
     position: relative;
@@ -94,11 +95,11 @@ html , body{
     height: 100vh;
   }
   
-  .panel {
+.panel {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-  }
+}

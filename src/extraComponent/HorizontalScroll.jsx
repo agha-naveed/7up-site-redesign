@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { IoMdArrowRoundForward } from "react-icons/io";
-
+import zeroSugar from '../assets/img/products/7up-zero-sugar.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,10 +38,18 @@ const HorizontalScroll = () => {
           Our New Products
           <IoMdArrowRoundForward />
         </div>
-        {/* <div className="panel panel-2 w-full bg-black">Panel 2</div>
-        <div className="panel panel-3 w-full bg-red-600">Panel 3</div>
-        <div className="panel panel-4 w-full bg-purple-600">Panel 4</div>
-        <div className="panel panel-5 w-full bg-slate-700">Panel 5</div> */}
+        <div className="flex gap-10 justify-center items-center px-10">
+          <h3 className="text-8xl font-semibold">
+            <span className="text-transparent" style={{WebkitTextStroke: "2px white"}}>
+              Refresh yourself
+            </span>
+            <br />
+            with the iconic lemon lime flavor of Original 7UP®!
+
+          </h3>
+          <img src={zeroSugar} className="w-[40vmin]" alt="" />
+        </div>
+        
       </div>
     </div>
   );
