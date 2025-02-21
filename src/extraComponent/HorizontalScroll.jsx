@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const HorizontalScroll = () => {
@@ -11,10 +10,9 @@ const HorizontalScroll = () => {
   useEffect(() => {
     const container = containerRef.current;
 
-    // Calculate the total scrollable width
     const totalWidth = container.scrollWidth - window.innerWidth;
 
-    // Create the horizontal scroll animation
+    
     gsap.to(container, {
       x: -totalWidth,
       ease: "none",
@@ -26,7 +24,6 @@ const HorizontalScroll = () => {
       },
     });
 
-    // Cleanup ScrollTrigger on component unmount
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };

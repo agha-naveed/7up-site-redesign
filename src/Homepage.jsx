@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 import './app.css'
 import Navbar from './Navbar'
-import Cane from './extraComponent/Cane'
+import Header from './Header'
 import bgVid from './assets/vid/bg.webm'
 import HorizontalScroll from './extraComponent/HorizontalScroll'
 
@@ -15,23 +15,14 @@ export default function App() {
         <div className="navbar flex justify-center">
           <Navbar />
         </div>
-        <div className='header-content flex justify-center'>
-          <div className="container flex justify-around">
-            <div className="header-content-texts py-56 w-fit z-10" data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="ease-in-out" >
-              <h2 className='text-white text-9xl font-bold'>Feels Good</h2>
-              <p className='text-white text-8xl'>to be you</p>
-            </div>
-
-            <Cane />
-          </div>
-        </div>
+        <Header />
       </header>
 
 
-      {/* <section className='h-screen relative overflow-hidden w-full bg-slate-700'> */}
-        {/* <video src={bgVid} loop autoPlay muted className='w-full opacity-25 blur-sm'></video> */}
+      <section className='relative w-full bg-slate-700'>
         <HorizontalScroll />
-      {/* </section> */}
+        <video src={bgVid} loop autoPlay muted className='w-full'></video>
+      </section>
         
     </div>
   )
