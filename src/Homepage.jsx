@@ -9,9 +9,8 @@ import HorizontalScroll from './extraComponent/HorizontalScroll'
 
 export default function App() {
   return (
-    <div>
-      <header className='w-full h-full bg-bgClr1 overflow-hidden'>
-        
+    <>
+      <header className='w-full h-fit bg-bgClr1 overflow-hidden'>
         <div className="navbar flex justify-center">
           <Navbar />
         </div>
@@ -23,7 +22,6 @@ export default function App() {
         <HorizontalScroll />
         <video src={bgVid} loop autoPlay muted className='w-full'></video>
       </section>
-        
-    </div>
+    </>
   )
 }

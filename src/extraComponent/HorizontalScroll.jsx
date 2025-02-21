@@ -38,16 +38,18 @@ const HorizontalScroll = () => {
           Our New Products
           <IoMdArrowRoundForward />
         </div>
-        <div className="flex gap-10 justify-center items-center px-10">
-          <h3 className="text-8xl font-semibold">
+        <div className="flex relative gap-10 justify-center items-center px-10">
+          <h3 className="text-8xl relative z-10 font-semibold">
             <span className="text-transparent" style={{WebkitTextStroke: "2px white"}}>
               Refresh yourself
             </span>
             <br />
-            with the iconic lemon lime flavor of Original 7UP®!
+            with the iconic lemon <span className="text-transparent" style={{WebkitTextStroke: "2px yellow"}}> lime fl</span>avor of Original 7UP®!
 
           </h3>
-          <img src={zeroSugar} className="w-[40vmin]" alt="" />
+          <div className="w-[300px] fixed z-0">
+            <img src={zeroSugar} className="w-full" alt="" />
+          </div>
         </div>
         
       </div>
