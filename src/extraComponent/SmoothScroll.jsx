@@ -5,20 +5,23 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 const SmoothScroll = ({ children }) => {
   const scrollRef = useRef(null);
 
+  let scroll;
+
   useEffect(() => {
     if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
+      scroll = new LocomotiveScroll({
         el: scrollRef.current,
         smooth: true,
       });
 
       return () => {
-        scroll.destroy();
+        if(scroll)
+          scroll.destroy();
       };
     }
-  }, []);
+  }, [children]);
 
-  return <div ref={scrollRef} className="h-full pointer-events-none">{children}</div>;
+  return <div ref={scrollRef} className="h-full">{children}</div>;
 };
 
 export default SmoothScroll;
