@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.css'
 import './app.css'
 import Navbar from './Navbar'
@@ -6,11 +6,44 @@ import Header from './Header'
 import bgVid from './assets/vid/bg.webm'
 import HorizontalScroll from './extraComponent/HorizontalScroll'
 import ProductsSlide from './ProductsSlide'
+import { FaArrowUp } from "react-icons/fa";
 
 
 export default function App() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+
+
+
+
   return (
     <>
+      <button
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        }}
+        className={`fixed bottom-5 right-5 z-[1000] transition-cane p-3 bg-blue-600 text-white rounded-full shadow-lg ${
+          isVisible ? "bottom-5" : "-bottom-12"
+        }`}
+        aria-label="Scroll to top"
+      >
+        <FaArrowUp size={20} />
+      </button>
+
       <header className='w-full h-fit bg-bgClr1 overflow-hidden'>
         <div className="navbar flex justify-center">
           <Navbar />
