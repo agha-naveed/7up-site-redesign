@@ -24,11 +24,12 @@ export default function ProductsSlide() {
             className={`
                 cursor-pointer
                 content-center
-                transition-all
+                transition-cane
                 relative z-10
                 ${
                     selectedCane == 0 ?
                     `
+                        !z-20
                         w-56
                         translate-x-[246px]
                     `
@@ -58,7 +59,7 @@ export default function ProductsSlide() {
             className={`
                 cursor-pointer
                 content-center
-                transition-all
+                transition-cane
                 relative z-10
                 ${
                     selectedCane == 0 ?
@@ -69,6 +70,7 @@ export default function ProductsSlide() {
                     :
                     selectedCane == 1 ?
                     `
+                        !z-20
                         translate-x-0
                         w-56
                     `
@@ -91,7 +93,7 @@ export default function ProductsSlide() {
             className={`
                 cursor-pointer
                 content-center
-                transition-all
+                transition-cane
                 relative z-10
                 ${
                     selectedCane == 0 ?

@@ -65,6 +65,9 @@ html , body{
     }
 }
 
+.transition-cane {
+    transition: 0.4s ease-out;
+}
 
 
 

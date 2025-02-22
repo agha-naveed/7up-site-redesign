@@ -12,7 +12,7 @@ export default {
       fontSize: {
         'heading-xl': "max(5.125rem,min(6.3333vw + 1rem,11rem))",
         'heading-lg': "max(5.125rem,min(5vw + 1rem,11rem))"
-      }
+      },
     },
   },
   plugins: [],
