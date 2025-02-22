@@ -18,42 +18,58 @@ export default function ProductsSlide() {
             {/* Cane 0 */}
             <div
               className={`
-                w-[190px]
-                blur-[2px]
                 content-center
-                
+                transition-all
+                ${
+                    selectedCane == 0 ?
+                    `
+                        w-56
+                        translate-x-[246px]
+                    `
+                    : "w-[190px] blur-[2px]"
+                }
               `}
               onClick={() => setSelectedCane(0)}
             >
                 <img src={cherry0Sugar} alt="7up Cherry Zero Sugar" className='w-full' />
             </div>
 
-
             {/* Cane 1 */}
             <div
               className={`
-                w-[190px]
-                blur-[2px]
                 content-center
-                
+                transition-all
+                ${
+                    selectedCane == 0 ?
+                    `
+                        w-[190px] blur-[2px]
+                        translate-x-[246px]
+                    `
+                    : "w-56"
+                }
               `}
               onClick={() => setSelectedCane(1)}
             >
-                <img src={sevenup} alt="7up Cherry Zero Sugar" className='w-full' />
+                <img src={tropical} alt="7up Cherry Zero Sugar" className='w-full' />
             </div>
-
 
             {/* Cane 2 */}
             <div
               className={`
-                w-[190px]
-                blur-[2px]
                 content-center
-                
+                transition-all
+                ${
+                    selectedCane == 0 ?
+                    `
+                        w-[190px] blur-[2px]
+                        translate-x-[-492px]
+                    `
+                    : "w-56 blur-[2px]"
+                }
               `}
               onClick={() => setSelectedCane(2)}
             >
-                <img src={tropical} alt="7up Cherry Zero Sugar" className='w-full' />
+                <img src={sevenup} alt="7up Cherry Zero Sugar" className='w-full' />
             </div>
             
         </div>
