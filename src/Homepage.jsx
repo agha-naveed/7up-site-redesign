@@ -27,7 +27,7 @@ export default function App() {
         <video src={bgVid} loop autoPlay muted className='w-full'></video>
       </section>
 
-      <section className='bg-black'>
+      <section className='bg-green-800'>
         <ProductsSlide />
       </section>
     </>
