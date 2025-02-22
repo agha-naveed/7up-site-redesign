@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Header from './Header'
 import bgVid from './assets/vid/bg.webm'
 import HorizontalScroll from './extraComponent/HorizontalScroll'
+import ProductsSlide from './ProductsSlide'
 
 
 export default function App() {
@@ -24,6 +25,10 @@ export default function App() {
 
       <section>
         <video src={bgVid} loop autoPlay muted className='w-full'></video>
+      </section>
+
+      <section className='bg-black'>
+        <ProductsSlide />
       </section>
     </>
   )
