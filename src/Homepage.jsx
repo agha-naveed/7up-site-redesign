@@ -36,7 +36,7 @@ export default function App() {
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" })
         }}
-        className={`fixed bottom-5 right-5 z-[1000] transition-cane p-3 bg-blue-600 text-white rounded-full shadow-lg ${
+        className={`fixed bottom-5 right-5 z-[1000] transition-cane p-3 bg-green-700 text-white rounded-full shadow-lg hover:shadow-md hover:shadow-black/40 hover:bg-green-800 ${
           isVisible ? "bottom-5" : "-bottom-12"
         }`}
         aria-label="Scroll to top"
