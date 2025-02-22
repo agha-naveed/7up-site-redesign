@@ -26,7 +26,18 @@ export default function ProductsSlide() {
                         w-56
                         translate-x-[246px]
                     `
-                    : "w-[190px] blur-[2px]"
+                    :
+                    selectedCane == 1 ?
+                    `
+                        translate-x-0
+                        w-[190px]
+                        blur-[2px]
+                    `
+                    :
+                    `
+                        translate-x-[530px]
+                        w-[190px] blur-[2px]
+                    `
                 }
               `}
               onClick={() => setSelectedCane(0)}
@@ -45,7 +56,17 @@ export default function ProductsSlide() {
                         w-[190px] blur-[2px]
                         translate-x-[246px]
                     `
-                    : "w-56"
+                    :
+                    selectedCane == 1 ?
+                    `
+                        translate-x-0
+                        w-56
+                    `
+                    :
+                    `
+                        translate-x-[-246px]
+                        w-[190px] blur-[2px]
+                    `
                 }
               `}
               onClick={() => setSelectedCane(1)}
@@ -62,9 +83,20 @@ export default function ProductsSlide() {
                     selectedCane == 0 ?
                     `
                         w-[190px] blur-[2px]
-                        translate-x-[-492px]
+                        translate-x-[-530px]
                     `
-                    : "w-56 blur-[2px]"
+                    :
+                    selectedCane == 1 ?
+                    `
+                        translate-x-0
+                        w-[190px]
+                        blur-[2px]
+                    `
+                    :
+                    `
+                        translate-x-[-246px]
+                        w-56
+                    `
                 }
               `}
               onClick={() => setSelectedCane(2)}
