@@ -32,6 +32,7 @@ const Cane = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
     return (
         <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out" className="banner content-center pointer-events-none">
             <div className="product" ref={productRef} style={{ '--left': `${leftValue}px`, transformOrigin: 'center center' }}>
@@ -39,13 +40,6 @@ const Cane = () => {
                     className="soda" 
                     style={{ 
                         '--url': `url(${bgPic})`
-                    }}
-                ></div>
-                <div 
-                    className="soda" 
-                    style={{ 
-                        '--url': `url(${bgPic2})`, 
-                        opacity: sodaOpacity,
                     }}
                 ></div>
             </div>
