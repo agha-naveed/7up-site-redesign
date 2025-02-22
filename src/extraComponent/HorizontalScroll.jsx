@@ -33,7 +33,7 @@ const HorizontalScroll = () => {
   }, []);
 
   return (
-    <div className="horizontal-scroll-container overflow-x-hidden">
+    <div className="horizontal-scroll-container overflow-hidden">
       <div ref={containerRef} className="horizontal-scroll-content text-white">
         <div className="panel panel-1 flex gap-6 w-full font-semibold text-5xl bg-black">
           Our New Products
