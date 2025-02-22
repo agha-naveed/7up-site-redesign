@@ -94,7 +94,7 @@ html , body{
     display: flex;
     width: 300vw; /* 3 times the viewport width */
     height: 100vh;
-  }
+}
   
 .panel {
     width: 100vw;
