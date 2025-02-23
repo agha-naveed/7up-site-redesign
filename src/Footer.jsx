@@ -2,6 +2,12 @@ import React from 'react'
 import zeroSugar from './assets/img/products/7up-zero-sugar.webp'
 import cherryZeroSugar from './assets/img/products/7up-cherry-zero-sugar.webp'
 import { IoIosStar } from "react-icons/io";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
+import { IoLogoInstagram } from "react-icons/io5";
+import { FiGithub } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
@@ -64,7 +70,7 @@ export default function Footer() {
 
             </div>
 
-            <div className='flex flex-row-reverse justify-center gap-16 mt-10'>
+            <div className='flex flex-row-reverse justify-center gap-16 mt-20'>
                 <div className='w-56'
                   data-aos="fade-right"
                   data-aos-offset="300"
@@ -121,6 +127,27 @@ export default function Footer() {
             </div>
             
         </div>
+
+        <footer className='text-center text-white py-2 grid gap-3'>
+            <div className='flex justify-center text-2xl gap-4'>
+                <Link to={"https://facebook.com/naveedbalti31"} target='_blank' >
+                    <FaFacebookF />
+                </Link>
+                <Link to={"https://www.linkedin.com/in/agha-naveed"} target='_blank' >
+                    <FaLinkedinIn />
+                </Link>
+                <Link to={"https://x.com/naveed_kazmi31"} target='_blank' >
+                    <RiTwitterXLine />
+                </Link>
+                <Link to={"https://instagram.com/aghanaveed_"} target='_blank' >
+                    <IoLogoInstagram />
+                </Link>
+                <Link to={"https://github.com/agha-naveed"} target='_blank' >
+                    <FiGithub />
+                </Link>
+            </div>
+            <span>Designed @AghaNaveed_ 2025</span>
+        </footer>
     </>
   )
 }
