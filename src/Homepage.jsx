@@ -7,6 +7,7 @@ import bgVid from './assets/vid/bg.webm'
 import HorizontalScroll from './extraComponent/HorizontalScroll'
 import ProductsSlide from './ProductsSlide'
 import { FaArrowUp } from "react-icons/fa";
+import Footer from './Footer'
 
 
 export default function App() {
@@ -44,7 +45,7 @@ export default function App() {
         <FaArrowUp size={20} />
       </button> */}
 
-      <header className='w-full h-fit bg-bgClr1 overflow-hidden'>
+      <header className='w-full h-fit bg-bgClr1 overflow-hidden relative z-[500]'>
         <div className="navbar flex justify-center">
           <Navbar />
         </div>
@@ -52,16 +53,23 @@ export default function App() {
       </header>
 
 
-      <section className='relative w-full bg-black'>
+      <section className='relative z-[500] w-full bg-black'>
         <HorizontalScroll />
       </section>
 
-      <section>
-        <video src={bgVid} loop autoPlay muted className='w-full'></video>
+      <section className='relative flex justify-center items-center bg-black'>
+        <h1 className='font-extrabold text-transparent text-heading-xl fixed z-20 bottom-52'
+          style={{WebkitTextStroke: "3px white"}}
+        >Advertisment</h1>
+        <video src={bgVid} loop autoPlay muted className='w-full opacity-80'></video>
       </section>
 
-      <section className='bg-green-800'>
+      <section className='bg-green-800 relative z-[500]'>
         <ProductsSlide />
+      </section>
+
+      <section className='bg-green-800 relative z-[500]'>
+        <Footer />
       </section>
     </>
   )

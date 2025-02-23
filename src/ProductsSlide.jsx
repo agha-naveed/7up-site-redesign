@@ -17,7 +17,8 @@ export default function ProductsSlide() {
 
   return (
     <div className='relative'>
-        <div className='container mx-auto w-full h-screen relative text-white py-20'>
+        <div
+          className='container mx-auto w-full h-screen relative text-white py-20'>
             <h2 className='font-semibold text-3xl text-center relative z-30 mb-6 transition-all'>
                 {
                     selectedCane == 0 ?
@@ -26,7 +27,7 @@ export default function ProductsSlide() {
                     "7up Tropical" : "7up Lemon Lime"
                 }
             </h2>
-            <div className='w-full h-full flex gap-14 justify-center'>
+            <div className='w-full h-full flex gap-14 justify-center' >
                 {/* Cane 0 */}
                 <div
                 title='7up Cherry Zero Sugar'
