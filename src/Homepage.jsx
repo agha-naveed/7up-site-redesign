@@ -13,18 +13,18 @@ export default function App() {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+  // useEffect(() => {
+  //   const toggleVisibility = () => {
+  //     if (window.scrollY > 300) {
+  //       setIsVisible(true);
+  //     } else {
+  //       setIsVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+  //   window.addEventListener("scroll", toggleVisibility);
+  //   return () => window.removeEventListener("scroll", toggleVisibility);
+  // }, []);
 
 
 
@@ -32,7 +32,7 @@ export default function App() {
 
   return (
     <>
-      <button
+      {/* <button
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" })
         }}
@@ -42,7 +42,7 @@ export default function App() {
         aria-label="Scroll to top"
       >
         <FaArrowUp size={20} />
-      </button>
+      </button> */}
 
       <header className='w-full h-fit bg-bgClr1 overflow-hidden'>
         <div className="navbar flex justify-center">

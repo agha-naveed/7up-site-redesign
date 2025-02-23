@@ -34,14 +34,16 @@ const Cane = () => {
     }, []);
     
     return (
-        <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out" className="banner content-center pointer-events-none">
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-out" className="banner content-center pointer-events-none">
             <div className="product" ref={productRef} style={{ '--left': `${leftValue}px`, transformOrigin: 'center center' }}>
-                <div 
+                <img 
                     className="soda" 
                     style={{ 
                         '--url': `url(${bgPic})`
                     }}
-                ></div>
+                    loading='lazy'
+                    decoding='async'   
+                />
             </div>
         </div>
     );
