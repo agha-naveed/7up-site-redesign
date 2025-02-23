@@ -46,7 +46,7 @@ const HorizontalScroll = () => {
               Refresh yourself
             </span>
             <br />
-            with the iconic lemon lime flavor of Original 7UP®!
+            with the iconic lemon <span className="text-black"> lime </span> flavor of Original 7UP®!
 
           </h3>
           <div className="w-[300px] absolute right-0 z-0">
