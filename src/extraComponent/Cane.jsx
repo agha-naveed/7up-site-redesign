@@ -34,13 +34,11 @@ const Cane = () => {
     return (
         <div data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300" data-aos-easing="ease-in-out" className="banner content-center pointer-events-none">
             <div className="product" ref={productRef} style={{ '--left': `${leftValue}px`, transformOrigin: 'center center' }}>
-                <img 
+                <div 
                     className="soda" 
                     style={{ 
                         '--url': `url(${bgPic})`
                     }}
-                    loading='lazy'
-                    decoding='async'   
                 />
             </div>
         </div>

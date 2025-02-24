@@ -33,7 +33,7 @@ const HorizontalScroll = () => {
   }, []);
 
   return (
-    <div className="horizontal-scroll-container overflow-hidden">
+    <div className="horizontal-scroll-container overflow-hidden select-none">
       <div ref={containerRef} className="horizontal-scroll-content text-white">
         <div className="panel panel-1 flex gap-6 w-full font-semibold text-5xl bg-black">
           Our New Products
@@ -46,7 +46,7 @@ const HorizontalScroll = () => {
               Refresh yourself
             </span>
             <br />
-            with the iconic lemon <span className="text-black"> lime </span> flavor of Original 7UP®!
+            with the iconic lemon <span className="text-transparent" style={{WebkitTextStroke: "3px black"}}> lime </span> flavor of Original 7UP®!
 
           </h3>
           <div className="w-[300px] absolute right-0 z-0">
